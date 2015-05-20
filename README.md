@@ -8,7 +8,7 @@ Clone repo:
 
     $ git clone https://github.com/<username>/<reponame>.git
 
-Update local branch from remote repo (usually “origin”):
+Update local branch from remote repo (usually "origin"):
 
     $ git pull origin <branch>
 
@@ -32,7 +32,7 @@ Switch to / work on / checkout branch:
 
     $ git checkout <branch>
 
-Save local feature branch to remote repo (usually “origin”):
+Save local feature branch to remote repo (usually "origin"):
 
     $ git push origin <feature_branch>
 
@@ -42,7 +42,7 @@ Save changes made to feature branch:
     $ git commit -m '<message>'
     $ git push origin <feature_branch>
 
-Update feature branch with any recent commits on the develop branch:
+Update feature branch with any recent commits on the base branch (usually "develop"):
 
     $ git checkout <feature_branch>
     $ git rebase develop
@@ -53,7 +53,7 @@ Incorporate feature into develop branch:
     $ git merge --no-ff <feature_branch>
     $ git push origin develop
 
-Delete local and remote feature branch:
+Delete local and remote feature branches:
 
     $ git branch -d <feature_branch>
     $ git push origin delete <feature_branch>
