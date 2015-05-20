@@ -3,10 +3,10 @@ What I've found to be common, best-practices approach to development with git
 
 clone repo:
 
-  $ git clone <https://github.com/.../....git>
+    $ git clone <https://github.com/.../....git>
 
 switch to / work on / checkout branch:
-  $ git checkout <branch>
+    $ git checkout <branch>
 
 update local branch from remote repo (usually “origin”):
   $ git fetch
