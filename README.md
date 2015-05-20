@@ -1,5 +1,5 @@
 # git-branching-model
-What I've found to be common, best-practices approach to development with git
+What I've found to be common, best-practice approaches to development with git
 
 
 ### getting (re)started
