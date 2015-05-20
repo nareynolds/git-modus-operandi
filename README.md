@@ -1,9 +1,16 @@
 # git-branching-model
 What I've found to be common, best-practices approach to development with git
 
+
+## getting (re)started
+
 clone repo:
 
     $ git clone <https://github.com/.../....git>
+
+reset working copy to remote repo (discard changes):
+
+    $ git reset --hard
 
 switch to / work on / checkout branch:
 
@@ -18,9 +25,7 @@ update local branch from remote repo (usually “origin”):
 
     $ git pull origin <branch>
 
-reset working copy to remote repo (discard changes):
-
-    $ git reset --hard
+## feature branches
 
 create a local feature branch:
 
