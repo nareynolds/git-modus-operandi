@@ -2,19 +2,11 @@
 What I've found to be common, best-practices approach to development with git
 
 
-## getting (re)started
+### getting (re)started
 
 clone repo:
 
     $ git clone <https://github.com/.../....git>
-
-reset working copy to remote repo (discard changes):
-
-    $ git reset --hard
-
-switch to / work on / checkout branch:
-
-    $ git checkout <branch>
 
 update local branch from remote repo (usually “origin”):
 
@@ -25,11 +17,20 @@ update local branch from remote repo (usually “origin”):
 
     $ git pull origin <branch>
 
-## feature branches
+reset working copy to remote repo (discard changes):
+
+    $ git reset --hard
+
+
+### feature branching
 
 create a local feature branch:
 
     $ git checkout -b <feature_branch> <branch>
+
+switch to / work on / checkout branch:
+
+    $ git checkout <branch>
 
 save local feature branch to remote repo (usually “origin”):
 
