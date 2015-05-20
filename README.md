@@ -1,4 +1,4 @@
-# git-branching-model
+# git-modus-operandi
 What I've found to be common, best-practice approaches to development with git
 
 
