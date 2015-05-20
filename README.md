@@ -10,12 +10,12 @@ clone repo:
 
 update local branch from remote repo (usually “origin”):
 
-    $ git fetch
-    $ git merge origin/<branch>
+    $ git pull origin <branch>
 
 ... or
 
-    $ git pull origin <branch>
+    $ git fetch
+    $ git merge origin/<branch>
 
 reset working copy to remote repo (discard changes):
 
@@ -41,6 +41,11 @@ save changes made to feature branch:
     $ git add --all
     $ git commit -m ‘<message>’
     $ git push origin <feature_branch>
+
+update feature branch with any recent commits on the develop branch:
+
+    $ git checkout <feature_branch>
+    $ git rebase develop
 
 incorporate feature into develop branch:
 
