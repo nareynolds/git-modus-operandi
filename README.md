@@ -6,7 +6,7 @@ What I've found to be common, best-practice approaches to development with git
 
 clone repo:
 
-    $ git clone <https://github.com/username/reponame.git>
+    $ git clone https://github.com/<username>/<reponame>.git
 
 update local branch from remote repo (usually “origin”):
 
