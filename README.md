@@ -39,7 +39,7 @@ save local feature branch to remote repo (usually “origin”):
 save changes made to feature branch:
 
     $ git add --all
-    $ git commit -m ‘<message>’
+    $ git commit -m '<message>'
     $ git push origin <feature_branch>
 
 update feature branch with any recent commits on the develop branch:
