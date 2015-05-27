@@ -64,3 +64,8 @@ Delete local and remote feature branches:
 - http://nvie.com/posts/a-successful-git-branching-model/
 
 - https://www.atlassian.com/git/tutorials/
+
+### Author
+
+Nathaniel Reynolds (nathaniel.reynolds@gmail.com)
+
