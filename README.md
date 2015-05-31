@@ -59,6 +59,29 @@ Delete local and remote feature branches:
     $ git push origin delete <feature_branch>
 
 
+### Release branching
+
+Create and save release branch for final tweaks/testing:
+
+    $ git checkout -b <release-X.X.X> develop
+    $ git push origin <release-X.X.X>
+    
+When production ready, incorporate it into master branch, and tag it:
+
+    $ git checkout master
+    $ git merge --no-ff <release-X.X.X>
+    $ git tag -a <vX.X.X> -m 'release version X.X.X'
+    $ git push origin master
+    $ git push origin <vX.X.X>
+    
+Incorporate final release back into develop, and delete branch:
+
+    $ git checkout develop
+    $ git merge --no-ff <release-X.X.X>
+    $ git branch -d <release-X.X.X>
+    $ git push origin delete <release-x.x.x>
+    
+
 ### Resources
 
 - http://nvie.com/posts/a-successful-git-branching-model/
