@@ -56,7 +56,7 @@ Incorporate feature into develop branch:
 Delete local and remote feature branches:
 
     $ git branch -d <feature_branch>
-    $ git push origin delete <feature_branch>
+    $ git push origin --delete <feature_branch>
 
 
 ### Release branching
@@ -79,7 +79,7 @@ Incorporate final release back into develop, and delete branch:
     $ git checkout develop
     $ git merge --no-ff <release-X.X.X>
     $ git branch -d <release-X.X.X>
-    $ git push origin delete <release-x.x.x>
+    $ git push origin --delete <release-x.x.x>
     
 
 ### Resources
