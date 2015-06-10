@@ -17,13 +17,18 @@ Update local branch from remote repo (usually "origin"):
     $ git fetch
     $ git merge origin/<branch>
 
-Discard changes in working copy since the latest commit:
+Discard changes in your working copy since the latest commit:
 
     $ git reset --hard
     
-Discard changes in working copy since and including the latest commit:
+Discard changes in your working copy and the latest commit:
     
     $ git reset --hard HEAD~1
+
+Reset your working copy to match the head of its remote branch:
+    
+    $ git fetch origin
+    $ git reset --hard origin/<branch>
 
 
 ### Feature branching
