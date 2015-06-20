@@ -83,12 +83,35 @@ When production ready, incorporate it into master branch, and tag it:
     $ git push origin master
     $ git push origin <vX.X.X>
     
-Incorporate final release back into develop, and delete branch:
+Incorporate final release back into develop, and delete its branch:
 
     $ git checkout develop
     $ git merge --no-ff <release-X.X.X>
     $ git branch -d <release-X.X.X>
     $ git push origin --delete <release-x.x.x>
+    
+
+### Hotfix branching
+
+Create and save a new branch to make the fixes on:
+
+    $ git checkout -b <hotfix-X.X.Z> master
+    $ git push origin <hotfix-X.X.Z>
+    
+When production ready, incorporate it into master branch, and tag it:
+
+    $ git checkout master
+    $ git merge --no-ff <hotfix-X.X.Z>
+    $ git tag -a <vX.X.Z> -m 'hotfix X.X.Z'
+    $ git push origin master
+    $ git push origin <vX.X.Z>
+
+Incorporate hotfix back into develop, and delete its branch:
+
+    $ git checkout develop
+    $ git merge --no-ff <hotfix-X.X.Z>
+    $ git branch -d <hotfix-X.X.Z>
+    $ git push origin --delete <hotfix-X.X.Z>
     
 
 ### Resources
