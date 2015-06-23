@@ -35,7 +35,7 @@ Reset your working copy to match the head of its remote branch:
 
 Create a local feature branch:
 
-    $ git checkout -b <feature_branch> <branch>
+    $ git checkout -b <feature-branch> <branch>
 
 Switch to / work on / checkout branch:
 
@@ -43,29 +43,29 @@ Switch to / work on / checkout branch:
 
 Save local feature branch to remote repo (usually "origin"):
 
-    $ git push origin <feature_branch>
+    $ git push origin <feature-branch>
 
 Save changes made to feature branch:
 
     $ git add --all
     $ git commit -m '<message>'
-    $ git push origin <feature_branch>
+    $ git push origin <feature-branch>
 
 Update feature branch with any recent commits on the base branch (usually "develop"):
 
-    $ git checkout <feature_branch>
+    $ git checkout <feature-branch>
     $ git rebase develop
 
 Incorporate feature into develop branch:
 
     $ git checkout develop
-    $ git merge --no-ff <feature_branch>
+    $ git merge --no-ff <feature-branch>
     $ git push origin develop
 
 Delete local and remote feature branches:
 
-    $ git branch -d <feature_branch>
-    $ git push origin --delete <feature_branch>
+    $ git branch -d <feature-branch>
+    $ git push origin --delete <feature-branch>
 
 
 ### Release branching
